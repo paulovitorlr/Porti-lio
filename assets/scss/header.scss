@@ -3,6 +3,7 @@ header{
         div.container{
             display: flex;
             flex-direction: column;
+            background: linear-gradient(90deg, #E6DACE 50%, #FFFFFF 50%);
 
             div.container-item{
                 display: flex;
@@ -11,4 +12,6 @@ header{
             }
         }
     }
+
+
 }

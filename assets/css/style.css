@@ -24,6 +24,7 @@ header section div#right {
 header section div.container {
   display: flex;
   flex-direction: column;
+  background: linear-gradient(90deg, #E6DACE 50%, #FFFFFF 50%);
 }
 header section div.container div.container-item {
   display: flex;
@@ -32,10 +33,34 @@ header section div.container div.container-item {
 
 header section div#center {
   background-color: #F4ECE6;
+  width: 50vh;
+  height: 50vh;
 }
-header .container-item img {
+header .container-item-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px;
+  z-index: 9999;
+}
+header .container-item-center .foto-apresentar img {
   width: 200px;
   height: 200px;
+  border-radius: 100%;
+}
+header .sociais {
+  background-color: #fff;
+  padding: 6px 173px;
+}
+header .sociais img {
+  width: 25px;
+  height: 25px;
+  margin-left: 20px;
+}
+header .centralizar {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
 }
 
 /*# sourceMappingURL=style.css.map */
