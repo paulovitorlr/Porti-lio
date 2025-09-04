@@ -1,0 +1,18 @@
+nav{
+    div.navbarFlex{
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 50px;
+
+        background-color: #FFFFFF;
+
+        div.textsNav{
+            a{
+                margin: 15px;
+            }
+        }
+    }
+}

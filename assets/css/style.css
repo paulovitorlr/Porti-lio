@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav div.navbarFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background-color: #FFFFFF;
+}
+nav div.navbarFlex div.textsNav a {
+  margin: 15px;
+}
+
+header section div#right {
+  background-color: #E6DACE;
+  height: 910px;
+  width: 750px;
+}
+
+header section div.container {
+  display: flex;
+  flex-direction: column;
+}
+header section div.container div.container-item {
+  display: flex;
+  flex-direction: row;
+}
+
+header section div#center {
+  background-color: #F4ECE6;
+}
+header .container-item img {
+  width: 200px;
+  height: 200px;
+}
+
+/*# sourceMappingURL=style.css.map */
