@@ -1,9 +1,12 @@
 header{
     section{
          div#center{
+            position: relative;
+            top:150px;
+            right: 60px;
             background-color: #F4ECE6;
-            width: 50vh;
-            height: 50vh;
+            width: 399px;
+            height: 450px;
         }
     }
    
@@ -22,7 +25,7 @@ header{
     
     .sociais{
         background-color: #fff;
-        padding:6px 173px;
+        padding:6px 132px;
         img{
             
             width: 25px;
@@ -35,7 +38,7 @@ header{
         
       display: flex;
       
-      align-items: center;     // centraliza vertical
+      align-items: center;     
       min-height: 100vh;
     }
  

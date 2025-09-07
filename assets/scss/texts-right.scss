@@ -1,0 +1,33 @@
+header {
+  .centralizar {
+    display: flex;
+    justify-content: center; // centraliza horizontalmente
+    align-items: flex-start; // alinha pelo topo
+    gap: 40px;               // espaço entre as divs
+    flex-wrap: wrap;         // responsivo: quebra em telas menores
+    padding: 20px;
+
+    #center{
+      background: #f4ece6;
+      width: 399px;
+      min-height: 450px;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    #left {
+      
+      position: relative;
+      bottom: 390px;
+      left: 320px;
+      width: 399px;
+      min-height: 450px;
+    }
+
+    .sociais{
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+  }
+}
