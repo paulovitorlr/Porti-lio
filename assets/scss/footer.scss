@@ -5,4 +5,57 @@
     align-items: center;
 
     height: 200px;
+
+    .comunicationText{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+    }
+
+    //texto footer
+    span.footerText{
+        font-family: "Cal Sans", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+    }
+    span.tell{
+        position: relative;
+        left: 65px;
+    }
+    span.footerInfo{
+        color: black;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 200;
+        font-style: normal;
+        position: relative;
+        top: 22px;
+    }
+
+    span.footerMail{
+        color: black;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 200;
+        font-style: normal;
+        position: relative;
+        top: 20px;
+        right: 108px;
+    }
+
+    span.footerImg a img{
+        width: 20px;
+        height: 20px;
+        position: relative;
+        top: 25px;
+        right: 108px;
+    }
+
+    .forText{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
 }

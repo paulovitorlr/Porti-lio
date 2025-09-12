@@ -6,7 +6,33 @@ header{
             right: 200px; //para mexer a div do centro
             background-color: #F4ECE6;
             width: 399px;
-            height: 450px;
+            height: 500px;
+
+            //textos dentro da div
+            .nameText{
+                font-size: 30px;
+                font-family: "Cal Sans", sans-serif;
+                font-weight: 500;
+                font-style: normal;
+                
+                position: relative; // precisa pra posicionar o texto
+                bottom: 35px;
+
+                border-bottom: 2px solid #0050FF;
+                padding-bottom: 20px ;
+            }
+
+            .carrerText{
+                font-size: 17px;
+                font-family: "Montserrat", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 200;
+                font-style: normal;
+                position: relative;
+                bottom: 20px;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+            }
         }
     }
    
@@ -14,7 +40,7 @@ header{
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 40px;
+        margin: 25px;
         z-index: 9999;
             .foto-apresentar img{
                 width: 200px;
@@ -26,6 +52,7 @@ header{
     }
     
     .sociais{
+        border-radius: 0 !important;
         background-color: #fff;
         padding:6px 132px;
         img{
@@ -34,6 +61,8 @@ header{
             height: 25px;
             margin-left: 20px;
         }
+
+        
     }
     
     .centralizar{
@@ -44,7 +73,7 @@ header{
       min-height: 100vh;
     }
  
-    //textos dentro da div
+    
     
     
 }

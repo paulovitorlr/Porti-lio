@@ -104,6 +104,53 @@ header .subParagraphText {
   align-items: center;
   height: 200px;
 }
+.footer .comunicationText {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+.footer span.footerText {
+  font-family: "Cal Sans", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+.footer span.tell {
+  position: relative;
+  left: 65px;
+}
+.footer span.footerInfo {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  position: relative;
+  top: 22px;
+}
+.footer span.footerMail {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  position: relative;
+  top: 20px;
+  right: 108px;
+}
+.footer span.footerImg a img {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 25px;
+  right: 108px;
+}
+.footer .forText {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
 
 * {
   padding: 0;
@@ -192,13 +239,34 @@ header section div#center {
   right: 200px;
   background-color: #F4ECE6;
   width: 399px;
-  height: 450px;
+  height: 500px;
+}
+header section div#center .nameText {
+  font-size: 30px;
+  font-family: "Cal Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  position: relative;
+  bottom: 35px;
+  border-bottom: 2px solid #0050FF;
+  padding-bottom: 20px;
+}
+header section div#center .carrerText {
+  font-size: 17px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  position: relative;
+  bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 header .container-item-center {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 40px;
+  margin: 25px;
   z-index: 9999;
 }
 header .container-item-center .foto-apresentar img {
@@ -207,6 +275,7 @@ header .container-item-center .foto-apresentar img {
   border-radius: 100%;
 }
 header .sociais {
+  border-radius: 0 !important;
   background-color: #fff;
   padding: 6px 132px;
 }

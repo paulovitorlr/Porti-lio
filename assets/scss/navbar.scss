@@ -65,7 +65,7 @@ nav{
                 font-style: normal;
                 padding-right: 20px;
                 margin-right: 8px;
-                position: relative; // precisa pra posicionar o pseudo
+                position: relative; // precisa pra posicionar o texto
 
                 &::after {
                 content: "";
