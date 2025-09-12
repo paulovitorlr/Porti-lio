@@ -3,7 +3,14 @@ header{
         div.container{
             display: flex;
             flex-direction: column;
-            background: linear-gradient(90deg, #E6DACE 50%, #FFFFFF 50%);
+            //para fazer a cor solida na parte esquerda da tela
+            background: linear-gradient(
+                90deg,
+              #E6DACE 40%,
+              #E6DACE 40%,
+              #FFFFFF 30%,
+              #FFFFFF 100%
+);
 
             div.container-item{
                 display: flex;

@@ -15,19 +15,86 @@ header .centralizar #center {
   width: 399px;
   min-height: 450px;
   padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 header .centralizar #left {
   position: relative;
   bottom: 390px;
-  left: 320px;
+  left: 200px;
   width: 399px;
   min-height: 450px;
 }
 header .centralizar .sociais {
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+header .titleText {
+  font-size: 100px;
+  font-family: "Cal Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  position: relative;
+  bottom: 10px;
+  right: 80px;
+}
+header .subtitleText {
+  font-size: 23px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  position: relative;
+  bottom: 40px;
+  right: 10px;
+}
+header .btn {
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  position: relative;
+  bottom: 30px;
+  left: 50px;
+}
+header .btn1 {
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-radius: 30px;
+}
+header .btn1:hover {
+  color: #fff;
+  background-color: #0050FF;
+}
+header .btn2 {
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-radius: 30px;
+}
+header .btn2:hover {
+  color: #fff;
+  background-color: #0050FF;
+}
+header .paragraphText {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 2px;
+}
+header .subParagraphText {
+  position: relative;
+  top: 20px;
 }
 
 .footer {
@@ -63,7 +130,7 @@ nav div.navbarFlex div.textsNav a {
   color: #000;
 }
 nav div.navbarFlex div.textsNav a:hover {
-  color: #5E9CEA;
+  color: #0050FF;
 }
 nav div.navbarFlex div#logotipo .subtitle {
   font-size: 17px;
@@ -112,7 +179,7 @@ header section div#right {
 header section div.container {
   display: flex;
   flex-direction: column;
-  background: linear-gradient(90deg, #E6DACE 50%, #FFFFFF 50%);
+  background: linear-gradient(90deg, #E6DACE 40%, #E6DACE 40%, #FFFFFF 30%, #FFFFFF 100%);
 }
 header section div.container div.container-item {
   display: flex;
@@ -122,7 +189,7 @@ header section div.container div.container-item {
 header section div#center {
   position: relative;
   top: 150px;
-  right: 60px;
+  right: 200px;
   background-color: #F4ECE6;
   width: 399px;
   height: 450px;
