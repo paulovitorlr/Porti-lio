@@ -166,6 +166,9 @@ nav div.navbarFlex {
   padding: 50px;
   background-color: #FFFFFF;
 }
+nav div.navbarFlex div.textsNav button.transparent {
+  display: none;
+}
 nav div.navbarFlex div.textsNav a {
   margin: 15px;
   font-size: 17px;
@@ -221,6 +224,61 @@ header section div#right {
   background-color: #E6DACE;
   height: 910px;
   width: 750px;
+}
+
+FOOTER .footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 200px;
+}
+FOOTER .footer .comunicationText {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+FOOTER .footer span.footerText {
+  font-family: "Cal Sans", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+FOOTER .footer span.tell {
+  position: relative;
+  left: 65px;
+}
+FOOTER .footer span.footerInfo {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  position: relative;
+  top: 22px;
+}
+FOOTER .footer span.footerMail {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  position: relative;
+  top: 20px;
+  right: 108px;
+}
+FOOTER .footer span.footerImg a img {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 25px;
+  right: 108px;
+}
+FOOTER .footer .forText {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 header section div.container {
@@ -288,6 +346,124 @@ header .centralizar {
   display: flex;
   align-items: center;
   min-height: 100vh;
+}
+
+@media (max-width: 1150px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+  }
+  .footer .comunicationText {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+    gap: 20px;
+  }
+  .footer span.footerText {
+    font-family: "Cal Sans", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  .footer span.tell {
+    position: relative;
+    left: 65px;
+    top: 100px;
+  }
+  .footer span.mail {
+    position: relative;
+    top: 120px !important;
+  }
+  .footer span.footerInfo {
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    position: relative;
+    top: 130px !important;
+  }
+  .footer .sociaisText {
+    position: relative;
+    top: 50px;
+  }
+  .footer span.footerMail {
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    position: relative;
+    left: 0;
+    top: 50px !important;
+  }
+  .footer span.footerImg a img {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    left: 0px;
+  }
+  .footer .forText {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+@media (max-width: 945px) {
+  nav div.navbarFlex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #FFFFFF;
+  }
+  nav div.navbarFlex div.textsNav button.transparent {
+    display: inline-flex;
+    background-color: transparent;
+    border: none;
+    width: 50px;
+    height: 50px;
+  }
+  nav div.navbarFlex div.textsNav a {
+    display: none;
+    margin: 15px;
+    font-size: 17px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 8px;
+    color: #000;
+  }
+  nav div.navbarFlex div.textsNav a:hover {
+    color: #0050FF;
+  }
+  nav div.navbarFlex div#logotipo .subtitle {
+    font-size: 17px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    position: relative;
+    top: 30px;
+    right: 200px;
+  }
+  nav div.navbarFlex div#logotipo span img {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+  }
+  nav div.navbarFlex div#logotipo .title {
+    font-size: 25px;
+    font-family: "Cal Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    position: relative;
+    left: 0px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

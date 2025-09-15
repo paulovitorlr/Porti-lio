@@ -1,0 +1,166 @@
+//primeiro footer
+@media(max-width: 1150px){
+    .footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    
+
+    .comunicationText{
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+        gap: 20px;
+    }
+
+      //texto footer
+    span.footerText{
+        font-family: "Cal Sans", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+    }
+    span.tell{
+        position: relative;
+        left: 65px;
+        top: 100px;
+        
+    }
+    span.mail{
+        position: relative;
+        top: 120px !important;
+    }
+    span.footerInfo{
+        color: black;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 200;
+        font-style: normal;
+        position: relative;
+        top: 130px !important;
+        
+        
+    }
+    .sociaisText{
+        position: relative;
+        top: 50px;
+    }
+
+    span.footerMail{
+        color: black;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 200;
+        font-style: normal;
+        position: relative;
+        left: 0;
+        top: 50px !important;
+         
+    }
+
+    span.footerImg a img{
+        width: 20px;
+        height: 20px;
+        position: relative;
+       
+        left: 0px;
+    }
+
+    .forText{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
+}
+}
+//primeiro footer
+
+//nav
+@media(max-width: 945px){
+    nav{
+
+    div.navbarFlex{
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 50px;
+
+        background-color: #FFFFFF;
+
+        div.textsNav{
+             button.transparent{
+
+                display:inline-flex;
+                
+                background-color: transparent;
+                border: none;
+                width: 50px ;
+                height: 50px ;
+            }
+            a{
+                display: none;
+                margin: 15px;
+                font-size: 17px;
+                font-family: "Montserrat", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: normal;
+                margin-left: 8px;
+                color: #000;
+
+                &:hover{
+                    color: #0050FF;
+                }
+            }
+        }
+        
+        div#logotipo{
+
+           
+            .subtitle{
+                font-size: 17px;
+                font-family: "Montserrat", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 200;
+                font-style: normal;
+                position: relative;
+                top: 30px;
+                right: 200px;                
+            }
+            
+           
+
+            span{
+                
+                img{
+                    width: 18px;
+                    height: 18px;
+                    margin-right: 8px;
+                   
+                    
+                }
+            }
+            .title {
+                font-size: 25px;
+                font-family: "Cal Sans", sans-serif;
+                font-weight: 500;
+                font-style: normal;
+                
+                position: relative;
+                left: 0px;
+
+              
+            }
+            
+           
+        }
+    }
+    
+
+}
+}
+//nav
