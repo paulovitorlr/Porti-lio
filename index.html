@@ -11,7 +11,9 @@
 <body>
     <!--Nav Bar-->
     <nav>
-        <div class="navbarFlex">
+      <!--Desktop-->
+      <div class="desktopBar">
+          <div class="navbarFlex">
 
             <div id="logotipo">
              <a href="#">
@@ -41,17 +43,56 @@
             </a>
         </div>
         </div>
+      </div>
+        <!--Desktop-->
+
         
+        <!--Mobile-->
+        <div class="mobileBar">
+          <div class="navbarFlex">
+
+            <div id="logotipo">
+             <a href="#">
+                <span><img src="./assets/images/dry.png" alt=""></span>
+                <span class="title">Paulo Vitor</span>
+                <span class="subtitle">DESENVOLVEDOR WEB</span>
+             </a>
+           
+             </div>
+     
+        <div class="textsNav ">
+          <button class="transparent"><img src="./assets/images/cardapio (1).png" alt=""></button>
+            <a href="">
+                Sobre Mim
+            </a>
+
+            <a href="">
+                Currículo
+            </a>
+
+            <a href="">
+                Projetos
+            </a>
+
+            <a href="">
+                Contato
+            </a>
+        </div>
+        </div>
+      </div>
+        <!--Mobile--> 
     </nav>
     <!--Nav Bar-->
 
     <!--Header-->
     <header>
-  <section>
-    <!--Div do centro-->
-    <div class="container centralizar">
-      
-      <!--Cartao de apresentação-->
+    <section>
+    
+      <!--desktop Header-->
+      <div class="desktopHeader">
+        <div class="container centralizar">
+
+           <!--Cartao de apresentação-->
       <div id="center" class="container-item-center">
         <div class="container-item-center foto-apresentar">
           <img src="./assets/images/logotipo.png" alt="">
@@ -104,13 +145,84 @@
 
     </div>
     <!--/Div do centro-->
+        </div>
+      </div>
+      <!--desktop Header-->
+  
+      <!--Mobile Header-->
+     <div class="mobileHeader">
+        <div class="container centralizar">
+
+           <!--Cartao de apresentação-->
+      <div id="center" class="container-item-center">
+        <div class="container-item-center foto-apresentar">
+          <img src="./assets/images/logotipo.png" alt="">
+        </div>
+
+        <div>
+          <div class="container-item-center">
+            <h3 class="nameText">Paulo<br>Vitor</h3>
+          </div>
+           <div>
+            <a href="" class="container-item btn btn1">CURRÍCULO</a>
+            <a href="" class="container-item btn btn2">PROJETOS</a>
+          </div>
+        </div>
+        </div>
+
+        <div class="container-item sociais">
+          <a href=""><img src="/assets/images/linkedin-big-logo.png" alt=""></a>
+          <a href=""><img src="/assets/images/github.png" alt=""></a>
+          <a href=""><img src="/assets/images/youtube.png" alt=""></a>
+        </div>
+
+        <!--Div da bio-->
+        <div class="texts-right">
+          <div>
+            <div class="container-item-center">
+              <h1 class="titleText">Olá</h1>
+            </div>
+            <div>
+              <h2 class="container-item-center subtitleText">Meu perfil e meus projetos</h2>
+            </div>
+          </div>
+
+           <div class="container-item-center">
+              <p class="paragraphText">
+                Sou um parágrafo. Aqui você pode adicionar seu texto. 
+                É fácil, basta clicar em "Editar texto" ou clicar duas vezes sobre mim para editar o conteúdo, a fonte e mais.
+                <br><span class="subParagraphText">Sou um ótimo lugar para você contar a sua história e compartilhar sobre você.</span>
+              </p>
+            </div>
+          </div>
+      </div>
+      <!--Div da bio-->
+      <!--/Cartao de apresentação-->
+
+      <!--Div do texto (lado direito)-->
+      <div id="left">
+        
+
+         
+
+       
+      <!--/Div do texto-->
+
+    </div>
+    <!--/Div do centro-->
+        </div>
+      </div>
+      <!--Mobile Header-->
   </section>
 </header>
 
     <!--Header-->
 
     <footer>
+      <!--Footer desktop-->
         <section>
+          <div class="desktopFooter">
+
             <div class="container">
                 <div class="footer">
                      <div class="comunicationText forText">
@@ -138,16 +250,56 @@
                             <a href=""><img src="/assets/images/github.png" alt=""></a>
                             <a href=""><img src="/assets/images/youtube.png" alt=""></a>
                             </span>
-                            
-                           
-                        </div>
-                         
+                        </div> 
                     </div>
                 </div>
             </div>
-               
-            
+
+          </div>    
         </section>
+        <!--Footer desktop-->
+
+        <!--Footer Mobile-->
+        <section>
+          <div class="mobileFooter">
+            <div class="container">
+                <div class="footer">
+                     
+
+                    <div class="comunicationText">
+                        <div>
+                            <span class="footerText tell">Telefone</span>  
+                            
+                            <a href=""><span class="footerInfo">(88) 9 8124-3676</span></a>
+                        </div>
+
+                        <div class="comunicationText">
+                            <span class="footerText mail">E-mail</span>
+                            <br>
+                            <span class="footerMail">paulovitorpesoal@gmail.com</span>
+                        </div>
+                        
+                        <div class="comunicationText">
+                            <span class="footerText sociaisText">Redes sociais</span>
+                            
+                            <span class="footerImg">
+                            <a href=""><img src="/assets/images/linkedin-big-logo.png" alt=""></a>
+                            <a href=""><img src="/assets/images/github.png" alt=""></a>
+                            <a href=""><img src="/assets/images/youtube.png" alt=""></a>
+                            </span>
+                        </div> 
+                    </div>
+
+                    <div class="comunicationText forText">
+                        <p>© 2025 por Paulo Vitor L. R. dos Santos.</p> 
+                    </div>
+                    
+                </div>
+            </div>
+          </div>
+             
+        </section>
+        <!--Footer mobile-->
     </footer>
 
 </body>

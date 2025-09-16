@@ -151,6 +151,9 @@ header .subParagraphText {
   font-weight: 400;
   font-style: normal;
 }
+.footer .mobileFooter {
+  display: none;
+}
 
 * {
   padding: 0;
@@ -159,6 +162,9 @@ header .subParagraphText {
   text-decoration: none;
 }
 
+nav .mobileBar {
+  display: none;
+}
 nav div.navbarFlex {
   display: flex;
   justify-content: space-between;
@@ -226,61 +232,9 @@ header section div#right {
   width: 750px;
 }
 
-FOOTER .footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  height: 200px;
+header .mobileHeader {
+  display: none;
 }
-FOOTER .footer .comunicationText {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 30px;
-}
-FOOTER .footer span.footerText {
-  font-family: "Cal Sans", sans-serif;
-  font-weight: 200;
-  font-style: normal;
-}
-FOOTER .footer span.tell {
-  position: relative;
-  left: 65px;
-}
-FOOTER .footer span.footerInfo {
-  color: black;
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 200;
-  font-style: normal;
-  position: relative;
-  top: 22px;
-}
-FOOTER .footer span.footerMail {
-  color: black;
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 200;
-  font-style: normal;
-  position: relative;
-  top: 20px;
-  right: 108px;
-}
-FOOTER .footer span.footerImg a img {
-  width: 20px;
-  height: 20px;
-  position: relative;
-  top: 25px;
-  right: 108px;
-}
-FOOTER .footer .forText {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
 header section div.container {
   display: flex;
   flex-direction: column;
@@ -348,7 +302,7 @@ header .centralizar {
   min-height: 100vh;
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1150px) and (max-width: 800px) {
   .footer {
     display: flex;
     flex-direction: row;
@@ -463,6 +417,131 @@ header .centralizar {
     font-style: normal;
     position: relative;
     left: 0px;
+  }
+}
+@media (max-width: 414px) {
+  nav .desktopBar {
+    display: none;
+  }
+  nav .mobileBar {
+    display: flex;
+    flex-direction: row;
+  }
+  nav div.navbarFlex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  nav .title {
+    font-size: 25px !important;
+    font-family: "Cal Sans", sans-serif !important;
+    font-weight: 500 !important;
+    font-style: normal !important;
+    padding-right: 20px !important;
+    margin-right: 8px !important;
+    position: relative !important;
+  }
+  nav .title::after {
+    width: 0 !important;
+  }
+  nav .subtitle {
+    font-size: 13px !important;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300 !important;
+    font-style: normal;
+    margin: 0px !important;
+    position: relative;
+    left: 0px;
+    top: 2px !important;
+  }
+  header .desktopHeader {
+    display: none;
+  }
+  header .mobileHeader {
+    display: block;
+  }
+  header section div.container {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to top, #E6DACE 80%, #FFFFFF 30%);
+  }
+  header div#center {
+    position: relative;
+    top: -50px !important;
+    right: 10px !important;
+    background-color: #F4ECE6;
+    width: 299px !important;
+    height: 400px !important;
+    box-shadow: -15px -1px 10px rgba(0, 0, 0, 0.2);
+  }
+  header .sociais {
+    border-radius: 0 !important;
+    background-color: #fff;
+    padding: 6px 82px;
+    position: relative;
+    right: 10px;
+    bottom: 115px;
+    box-shadow: -15px 5px 10px rgba(0, 0, 0, 0.2) !important;
+  }
+  header .sociais img {
+    width: 25px;
+    height: 25px;
+    margin-left: 20px;
+    position: relative;
+    right: 5px;
+  }
+  header .btn {
+    font-size: 12px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    position: relative;
+    bottom: 20px !important;
+    left: 0px;
+  }
+  header .texts-right .titleText {
+    font-size: 40px;
+    font-family: "Cal Sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    position: relative;
+    bottom: 120px;
+    right: 125px;
+  }
+  header .texts-right .subtitleText {
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    position: relative;
+    bottom: 135px;
+    right: 50px;
+  }
+  header .texts-right .paragraphText {
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 2px;
+    position: relative;
+    bottom: 135px;
+  }
+  footer .desktopFooter {
+    display: none;
+  }
+  footer .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .tell {
+    position: relative;
+    top: 100px;
   }
 }
 
