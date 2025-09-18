@@ -1,53 +1,38 @@
 //primeiro footer
-@media(max-width: 1150px) and (max-width: 800px){
-    .footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 200px;
+@media(max-width: 1150px) and (min-width: 800px){
+   footer{
+     .footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 200px;
     
 
-    .comunicationText{
-        display: flex;
-        flex-direction: column !important;
-        align-items: center;
-        gap: 20px;
-    }
+   
 
       //texto footer
-    span.footerText{
+    .footerText{
         font-family: "Cal Sans", sans-serif;
         font-weight: 200;
         font-style: normal;
     }
-    span.tell{
-        position: relative;
-        left: 65px;
-        top: 100px;
-        
-    }
-    span.mail{
-        position: relative;
-        top: 120px !important;
-    }
-    span.footerInfo{
+  
+    
+    .footerInfo{
         color: black;
         font-family: "Montserrat", sans-serif;
         font-optical-sizing: auto;
         font-weight: 200;
         font-style: normal;
         position: relative;
-        top: 130px !important;
+       
         
         
     }
-    .sociaisText{
-        position: relative;
-        top: 50px;
-    }
+    
 
-    span.footerMail{
+    .footerMail{
         color: black;
         font-family: "Montserrat", sans-serif;
         font-optical-sizing: auto;
@@ -55,7 +40,7 @@
         font-style: normal;
         position: relative;
         left: 0;
-        top: 50px !important;
+        
          
     }
 
@@ -64,7 +49,7 @@
         height: 20px;
         position: relative;
        
-        left: 0px;
+       
     }
 
     .forText{
@@ -74,6 +59,7 @@
         font-style: normal;
     }
 }
+   }
 }
 //primeiro footer
 
@@ -118,7 +104,7 @@
             }
         }
         
-        div#logotipo{
+        div#LOGOTIPO{
 
            
             .subtitle{
@@ -129,7 +115,8 @@
                 font-style: normal;
                 position: relative;
                 top: 30px;
-                right: 200px;                
+                right: 200px; 
+                color:#000               
             }
             
            
@@ -149,6 +136,7 @@
                 font-family: "Cal Sans", sans-serif;
                 font-weight: 500;
                 font-style: normal;
+                color: #000;
                 
                 position: relative;
                 left: 0px;

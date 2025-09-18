@@ -97,61 +97,66 @@ header .subParagraphText {
   top: 20px;
 }
 
-.footer {
+footer .footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   height: 200px;
 }
-.footer .comunicationText {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 30px;
+footer .footer .rodape {
+  position: absolute;
+  right: 200px;
+  width: 300px;
 }
-.footer span.footerText {
+footer .footer .rodape p {
+  text-align: center;
+}
+footer .footer .rodape2 {
+  position: relative;
+  top: 70px;
+  right: 200px;
+  width: 300px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+footer .footer .rodape2 p {
+  margin-right: 20px;
+}
+footer .footer p.footerText {
   font-family: "Cal Sans", sans-serif;
   font-weight: 200;
   font-style: normal;
 }
-.footer span.tell {
-  position: relative;
-  left: 65px;
-}
-.footer span.footerInfo {
+footer .footer p.footerInfo {
   color: black;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 200;
   font-style: normal;
-  position: relative;
-  top: 22px;
 }
-.footer span.footerMail {
+footer .footer p.footerMail {
   color: black;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 200;
   font-style: normal;
-  position: relative;
-  top: 20px;
-  right: 108px;
 }
-.footer span.footerImg a img {
+footer .footer span.footerImg a img {
   width: 20px;
   height: 20px;
   position: relative;
-  top: 25px;
-  right: 108px;
 }
-.footer .forText {
+footer .footer .forText {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
-.footer .mobileFooter {
+footer div.mobileFooter {
   display: none;
 }
 
@@ -302,48 +307,28 @@ header .centralizar {
   min-height: 100vh;
 }
 
-@media (max-width: 1150px) and (max-width: 800px) {
-  .footer {
+@media (max-width: 1150px) and (min-width: 800px) {
+  footer .footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     height: 200px;
   }
-  .footer .comunicationText {
-    display: flex;
-    flex-direction: column !important;
-    align-items: center;
-    gap: 20px;
-  }
-  .footer span.footerText {
+  footer .footer .footerText {
     font-family: "Cal Sans", sans-serif;
     font-weight: 200;
     font-style: normal;
   }
-  .footer span.tell {
-    position: relative;
-    left: 65px;
-    top: 100px;
-  }
-  .footer span.mail {
-    position: relative;
-    top: 120px !important;
-  }
-  .footer span.footerInfo {
+  footer .footer .footerInfo {
     color: black;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 200;
     font-style: normal;
     position: relative;
-    top: 130px !important;
   }
-  .footer .sociaisText {
-    position: relative;
-    top: 50px;
-  }
-  .footer span.footerMail {
+  footer .footer .footerMail {
     color: black;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -351,15 +336,13 @@ header .centralizar {
     font-style: normal;
     position: relative;
     left: 0;
-    top: 50px !important;
   }
-  .footer span.footerImg a img {
+  footer .footer span.footerImg a img {
     width: 20px;
     height: 20px;
     position: relative;
-    left: 0px;
   }
-  .footer .forText {
+  footer .footer .forText {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -395,7 +378,7 @@ header .centralizar {
   nav div.navbarFlex div.textsNav a:hover {
     color: #0050FF;
   }
-  nav div.navbarFlex div#logotipo .subtitle {
+  nav div.navbarFlex div#LOGOTIPO .subtitle {
     font-size: 17px;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -404,57 +387,79 @@ header .centralizar {
     position: relative;
     top: 30px;
     right: 200px;
+    color: #000;
   }
-  nav div.navbarFlex div#logotipo span img {
+  nav div.navbarFlex div#LOGOTIPO span img {
     width: 18px;
     height: 18px;
     margin-right: 8px;
   }
-  nav div.navbarFlex div#logotipo .title {
+  nav div.navbarFlex div#LOGOTIPO .title {
     font-size: 25px;
     font-family: "Cal Sans", sans-serif;
     font-weight: 500;
     font-style: normal;
+    color: #000;
     position: relative;
     left: 0px;
   }
 }
-@media (max-width: 414px) {
+@media (max-width: 873px) and (min-width: 350px) {
   nav .desktopBar {
     display: none;
   }
   nav .mobileBar {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
   }
-  nav div.navbarFlex {
+  nav .mobileBar div#LOGOTIPO a {
+    color: #000;
+  }
+  nav .mobileBar div#LOGOTIPO a span img {
+    width: 12px;
+    height: 12px;
+    position: relative;
+    top: 30px;
+  }
+  nav .mobileBar div#LOGOTIPO p.TITLE {
+    font-size: 30px;
+    font-family: "Cal Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    padding-right: 20px;
+    margin-right: 8px;
+    position: relative;
+    left: 15px;
+  }
+  nav .mobileBar div#LOGOTIPO p.SUBTITLE {
+    font-size: 13px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: #000;
+    margin: 0px;
+    position: relative;
+  }
+  nav div.NAVBARFLEX {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
   }
-  nav .title {
-    font-size: 25px !important;
-    font-family: "Cal Sans", sans-serif !important;
-    font-weight: 500 !important;
-    font-style: normal !important;
-    padding-right: 20px !important;
-    margin-right: 8px !important;
-    position: relative !important;
+  nav div.NAVBARFLEX div.TEXTSNAV button.TRANSPARENT {
+    display: inline-block;
+    background-color: transparent;
+    border: none;
   }
-  nav .title::after {
-    width: 0 !important;
-  }
-  nav .subtitle {
-    font-size: 13px !important;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300 !important;
-    font-style: normal;
-    margin: 0px !important;
+  nav div.NAVBARFLEX div.TEXTSNAV button.TRANSPARENT img {
+    width: 50px;
     position: relative;
-    left: 0px;
-    top: 2px !important;
+    left: 100px;
+  }
+  nav div.NAVBARFLEX div.TEXTSNAV a {
+    display: none;
   }
   header .desktopHeader {
     display: none;
@@ -467,25 +472,33 @@ header .centralizar {
     flex-direction: column;
     background: linear-gradient(to top, #E6DACE 80%, #FFFFFF 30%);
   }
-  header div#center {
+  header div#CENTER {
     position: relative;
-    top: -50px !important;
-    right: 10px !important;
+    top: 0px;
+    right: 10px;
     background-color: #F4ECE6;
-    width: 299px !important;
-    height: 400px !important;
+    width: 299px;
+    height: 400px;
     box-shadow: -15px -1px 10px rgba(0, 0, 0, 0.2);
   }
-  header .sociais {
-    border-radius: 0 !important;
+  header div#CENTER .NAMETEXT {
+    font-size: 30px;
+    font-family: "Cal Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    position: relative;
+    bottom: 35px;
+  }
+  header div.SOCIAIS {
+    border-radius: 0;
     background-color: #fff;
-    padding: 6px 82px;
+    padding: 6px 0px;
     position: relative;
     right: 10px;
     bottom: 115px;
-    box-shadow: -15px 5px 10px rgba(0, 0, 0, 0.2) !important;
+    box-shadow: -15px 5px 10px rgba(0, 0, 0, 0.2);
   }
-  header .sociais img {
+  header div.SOCIAIS img {
     width: 25px;
     height: 25px;
     margin-left: 20px;
@@ -499,29 +512,29 @@ header .centralizar {
     font-weight: 600;
     font-style: normal;
     position: relative;
-    bottom: 20px !important;
+    bottom: 20px;
     left: 0px;
   }
-  header .texts-right .titleText {
+  header .TEXTS-RIGHT .TITLETEXT {
     font-size: 40px;
     font-family: "Cal Sans", sans-serif;
     font-weight: 600;
     font-style: normal;
     position: relative;
-    bottom: 120px;
+    bottom: 85px;
     right: 125px;
   }
-  header .texts-right .subtitleText {
+  header .TEXTS-RIGHT .subtitleText {
     font-size: 15px;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
     position: relative;
-    bottom: 135px;
+    bottom: 100px;
     right: 50px;
   }
-  header .texts-right .paragraphText {
+  header .TEXTS-RIGHT .paragraphText {
     font-size: 14px;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -529,18 +542,59 @@ header .centralizar {
     font-style: normal;
     letter-spacing: 2px;
     position: relative;
-    bottom: 135px;
+    bottom: 100px;
   }
   footer .desktopFooter {
     display: none;
   }
-  footer .footer {
+  footer section .mobileFooter {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  footer .tell {
+  footer section .mobileFooter .CONTAINER {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  footer section .mobileFooter .CONTAINER .FOOTER .FOOTERTEXT {
+    font-family: "Cal Sans", sans-serif;
+    font-weight: 200;
+    font-style: normal;
     position: relative;
+  }
+  footer section .mobileFooter .CONTAINER .FOOTER .TELL {
+    position: relative;
+  }
+  footer section .mobileFooter .CONTAINER .FOOTER .FOOTERINFO {
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    position: relative;
+    margin: 0;
+  }
+  footer section .mobileFooter .CONTAINER .FOOTER .FOOTERMAIL {
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    position: relative;
+  }
+  footer section .mobileFooter .CONTAINER .FOOTER span.FOOTERIMG a img {
+    width: 20px;
+    height: 20px;
+    position: relative;
+  }
+  footer section .mobileFooter .CONTAINER .FOOTER div.FORTEXT {
+    font-size: 12px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
     top: 100px;
   }
 }
